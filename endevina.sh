@@ -14,11 +14,13 @@ intents=1
 RANGO=$((0-7+1))
 RANDOM=$$
 NUMRANDOM=$(($(($RANDOM%$RANGO))+1))
-#primera interfaç
+#primera interfaç on es llegeix el numero introduit per l'usuari
 echo "has de descobir el numero secret entre 1 i 6"
 echo "quin numero dirias que es?"
 echo "escriu la teva resposta:"
 read NUMUSER
+#comprovem, si no ha encertat retornem els intens i demanem un altre 
+#numero sumant 1 als intents.
 while test $NUMUSER -ne $NUMRANDOM; do
 	let "intents++"
 	echo "No has encertat el numero"
@@ -26,6 +28,8 @@ while test $NUMUSER -ne $NUMRANDOM; do
 	echo "digues un altre numero:"
 	read NUMUSER
 done
+#finalitzem imprimint un mistage de congratulacio i esperem per
+#finalitzar el script.
 clear
 echo "Felicitats has encertat en nomes $intents intents"
 echo " el numero aleatori era $NUMRANDOM"
