@@ -32,4 +32,3 @@ a2ensite $resp
 systemctl restart apache2
 apt install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip -y
 service apache2 restart
-mysql_secure_installation
