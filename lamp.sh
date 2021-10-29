@@ -5,7 +5,7 @@
 # date              : 29/10/2021
 # version           : 1.0.0
 # =====================================
-#!bin/bash
+#!/bin/bash
 apt update
 apt upgrade -y
 apt install apache2
