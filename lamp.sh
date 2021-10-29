@@ -3,7 +3,7 @@
 # description       : Script que instala y configura LAMP de forma automatizada.
 # author            : Carlos Hernandez Navarro
 # date              : 29/10/2021
-# version           : 1.0.0
+# version           : 1.0.8
 # =====================================
 #!/bin/bash
 echo "que nombre quieres para la web?"
