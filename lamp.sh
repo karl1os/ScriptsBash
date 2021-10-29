@@ -8,10 +8,10 @@
 #!/bin/bash
 apt update
 apt upgrade -y
-apt install apache2
+apt install apache2 -y
 a2enmod rewrite
 systemctl restart apache2
-apt install mysql-server
+apt install mysql-server -y
 ufw allow in "Apache Full"
 echo "que nombre quieres para la web?"
 read resp
